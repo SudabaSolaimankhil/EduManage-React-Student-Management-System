@@ -1,16 +1,37 @@
-# React + Vite
+# EduManage – React Student Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive student-management dashboard built with React, React Router, and custom CSS only.
 
-Currently, two official plugins are available:
+## Included
+- Dashboard with live statistics calculated from the student array
+- Students page with create, read, update, delete, and search
+- About page
+- Sidebar, topbar, footer
+- Responsive layout
+- No Bootstrap, Tailwind, icon package, or UI framework
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Install into an existing Vite React project
 
-## React Compiler
+1. Copy the `src` folder from this package into your project, replacing your existing `src` folder.
+2. Install React Router if it is not already installed:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+   ```bash
+   npm install react-router-dom
+   ```
 
-## Expanding the ESLint configuration
+3. Make sure your `index.html` has a root element:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   ```html
+   <div id="root"></div>
+   ```
+
+4. Run:
+
+   ```bash
+   npm run dev
+   ```
+
+## Notes
+- Data is stored in React state and resets after refreshing the browser.
+- The initial records are demonstration data.
+- The form validates required fields and checks for duplicate email addresses.
